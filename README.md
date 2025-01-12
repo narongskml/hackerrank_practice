@@ -1,2 +1,10 @@
-# hackerrank_practice
-hackerRank Code practice 
+# HackerRank Solution
+
+HackerRank Code practice
+
+My Solution
+
+   **SQL  practice**
+
+* Basic sql
+* Advance sql

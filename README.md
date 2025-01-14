@@ -4,7 +4,11 @@ HackerRank Code practice
 
 My Solution
 
-   **SQL  practice**
+## **SQL  practice**
 
 * Basic sql
 * Advance sql
+
+## Python practice
+
+*     basic_python

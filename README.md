@@ -12,3 +12,7 @@ My Solution
 ## Python practice
 
 *     basic_python
+
+
+## 1 Month Preparation 
+*   week 1

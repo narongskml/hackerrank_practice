@@ -6,8 +6,8 @@ My Solution
 
 ## **SQL  practice**
 
-* [Basic sql](sql\sql_basic "sql basic")
-* [Advance sql](sql\sql_advance "sql advance")
+* [Basic sql](sql/sql_basic "sql basic")
+* [Advance sql](sql/sql_advance "sql advance")
 
 ## Python practice
 

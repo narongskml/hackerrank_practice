@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cearsachipher</title>
+
+</head>
+<body>
+    <h1>Cearsar cipher</h1>
+    <button id="bt">Click me</button>
+    <script>
+
+        function caesarCipher(s, k) {               
+            const atoz = 'abcdefghijklmnopqrstuvwxyz';
+            let cipher='';
+            cipher=s.split().map(char => {
+                const charIndex = atoz.indexOf(char.toLowerCase());
+                if (charIndex === -1) {
+                    return char;
+                }
+                const shiftIndex = (charIndex + k);
+                const idx = shiftIndex < atoz.length ? shiftIndex : shiftIndex % atoz.length;
+                const shiftedChar = atoz.charAt(idx);
+                return char === char.toLowerCase() ? shiftedChar : shiftedChar.toUpperCase();
+            }).join('');
+        return cipher;
+        }
+
+        document.getElementById("bt").addEventListener("click", function(){
+                console.log("input: middle-Outz")
+                console.log("answer: " + caesarCipher("middle-Outz",2));
+                console.log("expect: okffng-Qwvb");
+
+                console.log("input2: There's-a-starman-wating-in-the-sky")
+                console.log("answer2: " + caesarCipher("There's-a-starman-wating-in-the-sky",3));
+                console.log("expect2: Wkhuh'v-d-vwdupdq-zdlwlqj-lq-wkh-vnb");
+        });
+    </script>
+</body>
+</html>

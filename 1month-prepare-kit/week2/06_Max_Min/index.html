@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Min</title>
+</head>
+<body>
+    <h1>Max-Min</h1>
+    <button id="bt">Run</button>
+    <script>
+
+        function maxMin(k, arr) {
+            // Write your code here
+            let minval = Number.POSITIVE_INFINITY;
+            const sorted = arr.sort((a,b) => a-b);
+            // Test all pair
+            for (let i=0; i <= sorted.length - k; i++) {
+                minval = Math.min(minval, sorted[i + k - 1] - sorted[i]);
+            }    
+            return minval;
+        }
+        document.getElementById("bt").addEventListener("click", function(){
+            var arr=[10,100,300,200,1000,20,30];
+            console.log(maxMin(3,arr));
+        });
+    </script>
+</body>
+</html>
